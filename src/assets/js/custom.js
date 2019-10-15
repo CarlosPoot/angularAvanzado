@@ -4,6 +4,14 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: js
 */
+
+function fueraAngular(){
+    console.log("funcion fuera de angular")
+}
+
+
+function initFuncion(){
+
 $(function() {
     "use strict";
     $(function() {
@@ -155,3 +163,7 @@ $(function() {
     });
 
 });
+
+
+
+}
