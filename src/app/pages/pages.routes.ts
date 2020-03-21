@@ -6,10 +6,11 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { NgModule } from '@angular/core';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
-
+import { LoginGuard } from '../services/guards/login.guard';
 
 const RUTAS_HJS:Routes = [
     {   path:'', component: PagesComponent,
+        canActivate: [ LoginGuard ],
         children: [
             { path:'dashboard', component: DashboardComponent, data:{ titulo: "Dashboard"} },
             { path:'progress', component:ProgressComponent , data: { titulo: "Progreso"} },

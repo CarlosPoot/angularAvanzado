@@ -14,11 +14,9 @@ export class PromesasComponent implements OnInit, OnDestroy {
     constructor() {}
 
     ngOnInit() {
-
         this.ejemplo = this.regresarObservable().subscribe( ( res )=>{
 
         })
-
     }
 
     ngOnDestroy(){

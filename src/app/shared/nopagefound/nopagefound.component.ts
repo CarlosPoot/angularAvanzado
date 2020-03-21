@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nopagefound',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NopagefoundComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _router:Router ) {
+    _router.navigateByUrl("/");
+   }
 
   ngOnInit() {
   }

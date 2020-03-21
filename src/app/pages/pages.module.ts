@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import{ FormsModule } from '@angular/forms';
+import{ FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
 
@@ -35,9 +35,10 @@ import { PromesasComponent } from './promesas/promesas.component';
     ],
     imports:[
         SharedModule,
-        FormsModule,
         RutasHijas,
-        ChartsModule
+        ChartsModule,
+        FormsModule,
+        ReactiveFormsModule,
     ]
 })
 export class PagesModule{}
